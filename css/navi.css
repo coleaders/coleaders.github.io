@@ -1,0 +1,147 @@
+@charset "utf-8";
+/* --------------------------------
+ * Navi Design
+ * -------------------------------- */
+
+/* ハンバーガーアイコン
+---------------------------------------------*/
+/* アイコンの基本設定 */
+.hamburger {
+	position: absolute;
+	top: 15px;
+	right: 3%;
+	width: 40px;
+	height: 28px;
+	z-index: 99999;
+	cursor: pointer;
+}
+.hamburger:hover {
+	opacity: 0.6;
+}
+.hamburger span {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 4px;
+	background: #fff;
+}
+.hamburger, .hamburger span {
+	display: inline-block;
+	transition: all .4s;
+	box-sizing: border-box;
+}
+.hamburger span:nth-of-type(1) {
+	top: 0;
+}
+.hamburger span:nth-of-type(2) {
+	top: 12px;
+}
+.hamburger span:nth-of-type(3) {
+	bottom: 0;
+}
+/* 擬似要素でテキストを表示させる */
+.hamburger::after {
+	position: absolute;
+	left: -2px;
+	bottom: -20px;
+	content: 'MENU';
+	display: block;
+	width: 100%;
+	color: #fff;
+	font-size: 1.4rem;
+	text-decoration: none;
+	white-space: nowrap;
+	transition: all .4s;
+}
+/* クリックしたときの動き */
+.hamburger.active::after {
+	content: 'CLOSE';
+}
+.hamburger.active span:nth-of-type(1) {
+	-webkit-transform: translateY(12px) rotate(-45deg);
+	transform: translateY(12px) rotate(-45deg);
+}
+.hamburger.active span:nth-of-type(2) {
+	opacity: 0;
+}
+.hamburger.active span:nth-of-type(3) {
+	-webkit-transform: translateY(-12px) rotate(45deg);
+	transform: translateY(-12px) rotate(45deg);
+}
+
+/* PCでは非表示 */
+@media (min-width: 960px) {
+.hamburger {
+	display: none;
+}
+}
+/* Mobileではヘッダー背景白、文字色黒に */
+@media (max-width: 640px) {
+.hamburger {
+	right: 5%;
+}
+.hamburger span {
+	background: #20272f;
+}
+.hamburger::after {
+	color: #20272f;
+}
+}
+
+
+
+/* ナビゲーション
+---------------------------------------------*/
+.navigation-item {
+	padding-left: 20px;
+	display: inline-block;
+}
+.navigation-item:first-of-type {
+	padding-left: 0;
+}
+
+@media (max-width: 959px) {
+.navigation {
+	position: absolute;
+	top: 75px;/* ヘッダーの高さを確保 */
+	left: 0;
+	display: none;
+	width: 100%;
+	height: 100vh;
+	z-index: 99998;
+}
+.navigation-item {
+	padding-left: 0;
+	display: block;
+	margin: 0 auto 1px;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+}
+/* ナビリンクのスタイル */
+.header nav li a {
+	color: #fff;
+	font-weight: bold;
+	letter-spacing: 0.02em;
+	text-decoration: none;
+	display: inline-block;/* 下線の最大幅をリンクテキストと同じ幅にするため */
+}
+.header nav li a::after {
+	content: '';
+	display: block;
+	width: 0;
+	margin: 3px auto 0;
+	border-bottom: 1px solid #fff;
+	transition: width 0.3s ease-in-out;
+}
+@media (max-width: 960px) {
+.header nav li a::after {
+	border-bottom: none;
+}
+}
+
+.header nav li a:hover::after {
+	width: 100%;
+}

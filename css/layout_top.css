@@ -1,0 +1,144 @@
+@charset "utf-8";
+/* --------------------------------
+ * Top page
+ * -------------------------------- */
+
+/* message
+---------------------------------------------*/
+.message .inner {
+	min-height: 545px;
+	background: url("../img/message.jpg") no-repeat top right;
+	background-size: contain;
+}
+.message .box {
+	padding: 70px 10% 50px 0;
+	width: 55%;
+	background-color: rgba(255, 255, 255, 0.85);
+}
+.message .image img {
+	display: none;
+}
+
+@media (max-width: 960px) {
+.message .inner {
+	min-height: inherit;
+	background-size: 85%;
+}
+.message .box {
+	padding: 70px 5% 0 0;
+	width: 55%;
+}
+}
+
+@media (max-width: 540px) {
+.message .inner {
+	background: none;
+}
+.message .box {
+	padding: 0;
+	width: 100%;
+}
+.message .image img {
+	display: block;
+	margin-top: 50px;
+	width: 100%;
+}
+}
+/* 署名 */
+.signature {
+	margin-top: 1em;
+	font-size: 1.4rem;
+	font-family: "游明朝", YuMincho, "Hiragino Mincho ProN", "Hiragino Mincho Pro", "メイリオ", Meiryo, "HGS明朝B", "HG明朝B", "ＭＳ 明朝", serif;
+	letter-spacing: 0.1em;
+	line-height: 1.3;
+	display: flex;
+	justify-content: flex-end;
+}
+.signature strong {
+	font-size: 1.8rem;
+	font-weight: normal;
+}
+/* top-aboutus
+---------------------------------------------*/
+.top-aboutus {
+	margin-bottom: 150px;
+}
+/* ボタン */
+.top-aboutus .button {
+	margin: 70px 0 50px auto;
+	text-align: right;
+}
+/* わたしたちの願い
+---------------------------------------------*/
+.negai .inner {
+	position: relative;
+}
+.negai .box {
+	margin-left: 55%;
+	width: 45%;
+}
+.negai .image {
+	position: absolute;
+	top: 0;
+	right: 55%;
+}
+
+@media (max-width: 540px) {
+.negai .box {
+	margin-left: 0;
+	width: 100%;
+}
+.negai .image {
+	position: static;
+	top: auto;
+	right: auto;
+}
+.negai .image img {
+	width: 100%;
+}
+}
+/* なぜ、関係性を取り扱うのか？
+---------------------------------------------*/
+.why {
+	padding-top: 166px;
+	padding-bottom: 70px;
+	background: #c8dff0;
+}
+
+@media (max-width: 540px) {
+.why {
+	margin-top: 70px;
+	padding-top: 70px;
+}
+}
+/* お問い合わせ
+---------------------------------------------*/
+.top-contact {
+	margin-top: 70px;
+}
+.top-contact .inner {
+	min-height: 410px;
+	position: relative;
+}
+.top-contact .box {
+	width: 45%;
+}
+.top-contact .image {
+	position: absolute;
+	top: 0;
+	left: 55%;
+}
+
+@media (max-width: 540px) {
+.top-contact .box {
+	width: 100%;
+}
+.top-contact .image {
+	position: static;
+	top: auto;
+	left: auto;
+}
+.top-contact .image img {
+	width: 100%;
+}
+}

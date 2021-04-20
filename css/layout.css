@@ -1,0 +1,592 @@
+@charset "utf-8";
+/* --------------------------------
+ * for You / Couple & Family / Organizations
+ * -------------------------------- */
+
+/* リード文
+---------------------------------------------*/
+.inner.lead .box {
+	margin: 0 auto;
+	width: 80%;
+}
+.midashi-message {
+	padding-bottom: 50px;
+	font-family: "游明朝", YuMincho, "Hiragino Mincho ProN", "Hiragino Mincho Pro", "メイリオ", Meiryo, "HGS明朝B", "HG明朝B", "ＭＳ 明朝", serif;
+	font-size: 2.4rem;
+	color: #0d4482;
+	letter-spacing: 0.1em;
+	line-height: 2;
+	text-align: center;
+}
+body.for-you .midashi-message {
+	color: #083e00;
+}
+body.about #concept .midashi-message {
+	text-align: left;
+}
+
+@media (max-width: 640px) {
+.midashi-message {
+	text-align: left;
+}
+.midashi-message br {
+	display: none;
+}
+}
+/* 2カラムレイアウト（写真と文章）
+---------------------------------------------*/
+/* デフォルト */
+.inner.two-column {
+	margin-top: 100px;
+}
+.inner.two-column {
+	min-height: 410px;
+	position: relative;
+}
+.inner.two-column .box {
+	width: 45%;
+}
+.inner.two-column .image {
+	position: absolute;
+	top: 0;
+	left: 55%;
+}
+
+@media (max-width: 960px) {
+.inner.two-column .box {
+	width: 100%;
+}
+.inner.two-column .image {
+	position: static;
+	top: auto;
+	left: auto;
+	margin: 30px auto 0;
+	text-align: center;
+}
+}
+/* 偶数行 */
+.inner.two-column:nth-of-type(even) .box {
+	margin-left: 55%;
+	width: 45%;
+}
+.inner.two-column:nth-of-type(even) .image {
+	position: absolute;
+	top: 0;
+	right: 55%;
+	left: auto;
+}
+
+@media (max-width: 960px) {
+.inner.two-column:nth-of-type(even) .box {
+	margin-left: 0;
+	width: 100%;
+}
+.inner.two-column:nth-of-type(even) .image {
+	position: static;
+	top: auto;
+	right: auto;
+}
+}
+
+/* 画像 */
+@media (max-width: 960px) {
+.inner.two-column.flow .image img {
+	width: 100%;
+}
+}
+
+@media (max-width: 640px) {
+.inner.two-column .image img {
+	width: 100%;
+}
+}
+/* 流れ
+---------------------------------------------*/
+.flow dt {
+	margin-top: 1em;
+	font-weight: bold;
+}
+.flow dt:first-of-type {
+	margin-top: 0;
+}
+/* お客さまの声
+---------------------------------------------*/
+body.for-you #voice {
+	margin-top: 150px;
+	background-color: rgba(246, 241, 223, 0.75);
+}
+#voice .inner {
+	padding-bottom: 70px;
+}
+#voice .inner.other-link {
+	padding-bottom: 150px;
+}
+/* レイアウト */
+#voice .box {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+#voice .honbun {
+	width: 70%;
+}
+#voice .image {
+	width: 20%;
+}
+#voice .image img {
+	width: 100%;
+}
+
+@media (max-width: 960px) {
+#voice .image {
+	width: 25%;
+}
+}
+
+@media (max-width: 425px) {
+#voice .box {
+	flex-direction: column-reverse;
+}
+#voice .honbun {
+	width: 100%;
+}
+#voice .image {
+	margin: 20px auto;
+	width: 100%;
+	text-align: center;
+}
+#voice .image img {
+	width: auto;
+}
+}
+/* さらに読む */
+.other-link i {
+	color: #4d719a;
+}
+#voice .inner.other-link {
+	line-height: 2.25;
+	text-align: right;
+}
+body.couple-family #system-coaching .other-link {
+	margin-top: 20px;
+}
+/* 関連リンク
+---------------------------------------------*/
+/* レイアウト */
+body.for-you #link .inner {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+body.for-you #link .box {
+	width: 45%;
+}
+
+@media (max-width: 960px) {
+body.for-you #link .box .image img {
+	width: 100%;
+}
+}
+
+@media (max-width: 425px) {
+body.for-you #link .box {
+	width: 100%;
+}
+body.for-you #link .box:nth-of-type(n+2) {
+	margin-top: 70px;
+}
+}
+/* 見出し */
+body.for-you #link .midashi {
+	margin-top: 30px;
+	font-weight: normal;
+}
+body.for-you #link .midashi strong {
+	font-size: 1.6rem;
+	display: block;
+}
+body.for-you #link a:hover .image {
+	opacity: 0.6;
+}
+/* 体験セッションお申し込み・お問い合わせ
+---------------------------------------------*/
+.entry {
+	margin-top: 150px;
+	padding-top: 150px;
+	padding-bottom: 150px;
+	background: url("../for_you/img/entry.jpg") no-repeat center top;
+	background-size: cover;
+}
+body.couple-family .entry {
+	margin-top: 0;
+	background: url("../couple_family/img/entry.jpg") no-repeat center top;
+	background-size: cover;
+}
+body.org .entry {
+	background: url("../organizations/img/entry.jpg") no-repeat center top;
+	background-size: cover;
+}
+.entry .box {
+	margin: 0 auto;
+	padding: 50px 10%;
+	width: 80%;
+	background-color: rgba(255, 255, 255, 0.8);
+}
+.entry .button {
+	margin: 50px auto 0;
+	width: 80%;
+}
+
+@media (max-width: 540px) {
+.entry .button {
+	width: 100%;
+}
+.entry .button strong {
+	display: block;
+}
+}
+/* マンガ
+---------------------------------------------*/
+.manga .inner {
+	padding-bottom: 150px;
+}
+.manga .image img {
+	margin: 0 auto;
+	width: 100%;
+}
+/* --------------------------------
+ * Couple & Family
+ * -------------------------------- */
+/* 事例
+---------------------------------------------*/
+/* レイアウト */
+body.couple-family #case {
+	margin-top: 150px;
+	padding-bottom: 150px;
+	background-color: rgba(246, 241, 223, 0.75);
+}
+body.couple-family #case .inner {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+body.couple-family #case .box {
+	margin-top: 70px;
+	width: 30%;
+}
+
+@media (max-width: 767px) {
+body.couple-family #case .box {
+	width: 45%;
+}
+}
+
+@media (max-width: 425px) {
+body.couple-family #case .box {
+	width: 100%;
+}
+}
+body.couple-family #case .box .image img {
+	width: 100%;
+}
+/* テキスト */
+body.couple-family #case .box .midashi {
+	margin-bottom: 5px;
+}
+body.couple-family #case .box .midashi span {
+	font-size: 1.6rem;
+}
+body.couple-family #case .box .honbun {
+	margin-top: 1em;
+}
+
+@media (max-width: 960px) {
+body.couple-family #case .box .midashi {
+	font-size: 2.2rem;
+}
+}
+/* --------------------------------
+ * Organizations
+ * -------------------------------- */
+
+/* 取り扱う領域
+---------------------------------------------*/
+.area {
+	margin-top: 70px;
+	padding-top: 70px;
+	padding-bottom: 70px;
+	background-color: rgba(246, 241, 223, 1);
+}
+/* レイアウト */
+.area .inner {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.area .box {
+	width: 30%;
+}
+.area .image {
+	width: 62.5%;
+}
+
+@media (max-width: 960px) {
+.area .box {
+	width: 100%;
+}
+.area .image {
+	margin: 30px auto 0;
+	width: 100%;
+	text-align: center;
+}
+.area .image img {
+	width: 100%;
+}
+}
+/* なぜコーチングなのか？
+---------------------------------------------*/
+/* レイアウト */
+.inner.why-org {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.inner.why-org:nth-of-type(even) {
+	padding-bottom: 100px;
+	flex-direction: row-reverse;
+}
+.inner.why-org .box {
+	width: 45%;
+}
+.inner.why-org .image {
+	width: 45%;
+}
+
+@media (max-width: 960px) {
+.inner.why-org .image img {
+	width: 100%;
+}
+}
+
+@media (max-width: 640px) {
+.inner.why-org .box {
+	width: 100%;
+}
+.inner.why-org .image {
+	margin: 30px auto 0;
+	width: 100%;
+	text-align: center;
+}
+}
+/* 事例
+---------------------------------------------*/
+.case-org .inner-wide {
+	padding-bottom: 70px;
+}
+.case-org .inner-wide:nth-of-type(n+2) {
+	padding-top: 70px;
+}
+.case-org .inner-wide:nth-of-type(even) {
+	background-color: rgba(200, 223, 240, 0.7);
+}
+/* レイアウト */
+.case-org .inner {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.case-org .midashi {
+	width: 100%;
+}
+.case-org .box {
+	width: 70%;
+}
+.case-org .image {
+	width: 20%;
+}
+.case-org .image img {
+	width: 100%;
+}
+
+@media (max-width: 960px) {
+.case-org .image {
+	width: 25%;
+}
+}
+
+@media (max-width: 768px) {
+.case-org .midashi span {
+	font-size: 1.6rem;
+}
+}
+
+@media (max-width: 425px) {
+.case-org .box {
+	width: 100%;
+}
+.case-org .image {
+	margin: 20px auto;
+	width: 100%;
+	text-align: center;
+}
+.case-org .image img {
+	width: auto;
+}
+}
+/* 提供サービス
+---------------------------------------------*/
+.service {
+	margin-top: 70px;
+	padding-top: 70px;
+	background: url("../organizations/img/image04.jpg") no-repeat left top;
+	background-size: 65%;
+}
+
+@media (min-width: 1440px) {
+.service {
+	background: url("../organizations/img/image04.jpg") no-repeat 35% top;
+}
+}
+/* レイアウト */
+.service .inner {
+	position: relative;
+}
+.service-message {
+	width: 45%;
+	text-align: right;
+	position: absolute;
+	bottom: 0;
+}
+.service .box {
+	margin-left: 45%;
+	padding-top: 70px;
+	padding-left: 5%;
+	width: 55%;
+	background-color: rgba(255, 255, 255, 0.9);
+}
+
+@media (max-width: 767px) {
+.service {
+	padding-top: 0;
+	background: none;
+}
+.service-message {
+	width: 100%;
+	text-align: center;
+	position: static;
+	bottom: auto;
+}
+.service .box {
+	margin-left: 0;
+	padding-left: 0;
+	width: 100%;
+}
+}
+/* 画像 */
+.service .box .image {
+	padding-top: 30px;
+}
+
+@media (max-width: 960px) {
+.service .box .image img {
+	width: 100%;
+}
+}
+/* メッセージ */
+.service-message strong {
+	font-weight: normal;
+	font-size: 3.0rem;
+	font-family: "游明朝", YuMincho, "Hiragino Mincho ProN", "Hiragino Mincho Pro", "メイリオ", Meiryo, "HGS明朝B", "HG明朝B", "ＭＳ 明朝", serif;
+}
+.service-message span {
+	color: #0d4482;
+}
+/* --------------------------------
+ * Entry page / Contact page
+ * -------------------------------- */
+
+/* 体験セッションお申し込み・お問い合わせフォーム
+---------------------------------------------*/
+.trial-session-entry, .contact-form {
+	padding-bottom: 150px;
+}
+.trial-session-entry .box, .contact-form .box {
+	margin: 0 auto;
+	width: 80%;
+}
+.trial-session-entry .box iframe, .contact-form .box iframe {
+	margin-bottom: 20px;
+	border: 1px #ccc solid;
+}
+.contact-form .box iframe {
+	margin-top: 20px;
+}
+
+@media (max-width: 540px) {
+.trial-session-entry .box, .contact-form .box {
+	width: 100%;
+}
+}
+/* 体験セッションお申し込みボタン
+---------------------------------------------*/
+body.contact .entry-button {
+	margin-top: 150px;
+}
+body.contact .entry-button .inner {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+body.contact .entry-button .box {
+	width: 45%;
+}
+
+@media (max-width: 640px) {
+body.contact .entry-button .box {
+	width: 100%;
+}
+body.contact .entry-button .box:nth-of-type(n+2) {
+	margin-top: 50px;
+}
+}
+body.contact .entry-button .button {
+	width: 100%;
+	background: #4d719a;
+}
+/* --------------------------------
+ * Sitemap page
+ * -------------------------------- */
+.sitemap-list {
+	margin-bottom: 150px;
+}
+.sitemap-list .inner {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.sitemap-list .box {
+	width: 45%;
+}
+
+@media (max-width: 640px) {
+.sitemap-list .box {
+	width: 100%;
+}
+.sitemap-list .box:nth-of-type(2) {
+	margin-top: 3em;
+}
+}
+.sitemap-list .box ul {
+	line-height: 1.5;
+}
+.sitemap-list .box li {
+	margin-top: 3em;
+}
+.sitemap-list .box li:first-of-type {
+	margin-top: 0;
+}
+.sitemap-list .box li.list-indent {
+	display: block;
+	margin-left: 2em;
+	margin-top: 1em;
+}
