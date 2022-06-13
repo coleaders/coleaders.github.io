@@ -142,3 +142,50 @@
 	width: 100%;
 }
 }
+/* お知らせ
+---------------------------------------------*/
+/* 背景 */
+.info {
+	margin-top: 70px;
+}
+/* フィード：レイアウト */
+#feed {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+#feed dl {
+	width: 30%;
+}
+#feed dl:nth-of-type(n+4) {
+	margin-top: 50px;
+}
+#feed dt, #feed dd {
+	width: 100%;
+}
+#feed dt img {
+	width: 100%;
+}
+
+@media (max-width: 767px) {
+#feed dl {
+	width: 100%;
+}
+#feed dl:not(:first-of-type) {
+	margin-top: 50px;
+}
+}
+/* フィード：テキスト */
+#feed dd {
+	margin-top: 10px;
+}
+/* 記事一覧へのリンク */
+.info .honbun {
+	/*margin-top: 1.875em;*/
+}
+.info .honbun.link {
+	text-align: right;
+}
+.info .honbun.link a::after {
+	content: "≫";
+}
