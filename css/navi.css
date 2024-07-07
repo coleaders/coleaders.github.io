@@ -136,6 +136,13 @@
 	border-bottom: 1px solid #fff;
 	transition: width 0.3s ease-in-out;
 }
+.header nav li span {/* 日本語英語切り替えナビ追加に伴い加筆 */
+	color: #fff;
+	font-weight: bold;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
 @media (max-width: 960px) {
 .header nav li a::after {
 	border-bottom: none;
