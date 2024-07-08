@@ -182,6 +182,18 @@
 .company-profile-list dt:first-of-type, .company-profile-list dd:first-of-type {
 	padding-top: 0;
 }
+
+body.en .company-profile-list {
+	margin-bottom: 150px;
+}
+body.en .company-profile-list dt {
+	width: 15em;
+}
+body.en .company-profile-list dd {
+	margin-left: 15em;
+}
+
+
 /* Related Links
 ---------------------------------------------*/
 #company-profile .link {
