@@ -1,0 +1,373 @@
+@charset "utf-8";
+
+/* ============================================================
+   Vow Renewal Page  (body.vow-renewal)
+   ============================================================ */
+
+/* ---- Hero / page-title ---------------------------------------- */
+
+body.vow-renewal .page-title {
+  min-height: 58vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(150deg, #1a2d42 0%, #27496e 55%, #3a6491 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+body.vow-renewal .page-title::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url(../vow_renewal/img/hero.jpg);
+  background-size: cover;
+  background-position: center 40%;
+  opacity: 0.30;
+}
+
+body.vow-renewal .page-title .inner {
+  position: relative;
+  z-index: 1;
+  padding: 6rem 0 7rem;
+}
+
+body.vow-renewal .page-title-main {
+  color: #fff;
+  font-size: 5.2rem;
+  letter-spacing: .06em;
+  margin-bottom: .6rem;
+}
+
+body.vow-renewal .page-title-sub {
+  color: rgba(255, 255, 255, 0.70);
+  font-size: 1.3rem;
+  letter-spacing: .28em;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+body.vow-renewal .page-title-catch {
+  color: #fff;
+  font-size: 2.4rem;
+  font-family: "游明朝", YuMincho, "Hiragino Mincho ProN", "Hiragino Mincho Pro", serif;
+  line-height: 1.8;
+  margin-bottom: 3.5rem;
+}
+
+body.vow-renewal .page-title .button {
+  width: 300px;
+}
+
+body.vow-renewal .page-title .button a {
+  background: transparent;
+  border: 1.5px solid rgba(255, 255, 255, 0.65);
+  color: #fff;
+  font-size: 1.6rem;
+}
+
+body.vow-renewal .page-title .button a:hover {
+  background: rgba(255, 255, 255, 0.15);
+  opacity: 1;
+}
+
+/* ---- Section backgrounds -------------------------------------- */
+
+body.vow-renewal #about   { background: #fff;     padding: 7rem 0; }
+body.vow-renewal #for-who { background: #f5f1ec;  padding: 7rem 0; }
+body.vow-renewal #story   { background: #fff;     padding: 7rem 0; }
+body.vow-renewal #session { background: #f5f1ec;  padding: 7rem 0; }
+
+body.vow-renewal .entry { background: #1a2d42; }
+body.vow-renewal .entry .box { background: rgba(255, 255, 255, 0.88); }
+
+/* ---- Large decorative section number -------------------------- */
+
+.vow-num {
+  display: block;
+  font-size: 11rem;
+  color: rgba(77, 113, 154, 0.09);
+  font-family: "游明朝", YuMincho, "Hiragino Mincho ProN", serif;
+  line-height: .72;
+  letter-spacing: -.05em;
+  margin-bottom: -3rem;
+  user-select: none;
+  pointer-events: none;
+}
+
+/* ---- Step cards (3-col) --------------------------------------- */
+
+.vow-steps {
+  display: flex;
+  gap: 2.5rem;
+  margin-top: 4.5rem;
+}
+
+.vow-step {
+  flex: 1;
+  background: #f5f1ec;
+  padding: 3rem 2.5rem;
+  border-top: 3px solid #4d719a;
+}
+
+.vow-step-num {
+  display: block;
+  font-size: 1.2rem;
+  color: #4d719a;
+  letter-spacing: .18em;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1.2rem;
+}
+
+.vow-step h4 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #20272f;
+  margin-bottom: 1.2rem;
+  line-height: 1.45;
+}
+
+.vow-step p {
+  font-size: 1.5rem;
+  line-height: 1.95;
+  color: #555;
+}
+
+/* ---- For who list --------------------------------------------- */
+
+.vow-for-who-list {
+  list-style: none;
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.vow-for-who-item {
+  background: #fff;
+  padding: 3rem 3.5rem;
+  border-left: 3px solid #4d719a;
+}
+
+.vow-for-who-item h4 {
+  font-size: 1.9rem;
+  font-weight: bold;
+  color: #20272f;
+  margin-bottom: .9rem;
+  line-height: 1.5;
+}
+
+.vow-for-who-item p {
+  font-size: 1.5rem;
+  line-height: 1.95;
+  color: #555;
+}
+
+/* ---- Story section -------------------------------------------- */
+
+.vow-story-grid {
+  display: grid;
+  grid-template-columns: 54% 43%;
+  gap: 3rem;
+  align-items: start;
+  margin-top: 4rem;
+}
+
+.vow-story-meta {
+  font-size: 1.3rem;
+  color: #4d719a;
+  letter-spacing: .10em;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.vow-story-body {
+  font-size: 1.6rem;
+  line-height: 2.1;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.vow-story-quote {
+  font-size: 1.9rem;
+  font-family: "游明朝", YuMincho, "Hiragino Mincho ProN", serif;
+  color: #27496e;
+  line-height: 2;
+  border-left: 2px solid #4d719a;
+  padding: 0 0 0 2.5rem;
+  margin: 3rem 0;
+  font-style: normal;
+}
+
+.vow-story-photos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 1rem;
+}
+
+.vow-photo-placeholder {
+  background: #d6e5f3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6a8fb5;
+  font-size: 1.3rem;
+  aspect-ratio: 4 / 3;
+  letter-spacing: .05em;
+}
+
+.vow-photo-placeholder.tall {
+  grid-column: 1;
+  grid-row: 1 / 3;
+  aspect-ratio: auto;
+  min-height: 0;
+}
+
+.vow-photo-placeholder img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ---- Session flow --------------------------------------------- */
+
+.vow-flow-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 4.5rem;
+}
+
+.vow-flow-item {
+  background: #fff;
+  padding: 3rem;
+  position: relative;
+}
+
+.vow-flow-item-num {
+  font-size: 5rem;
+  color: rgba(77, 113, 154, 0.11);
+  font-family: "游明朝", YuMincho, serif;
+  line-height: 1;
+  float: right;
+  margin: -.5rem -.5rem 0 1.5rem;
+}
+
+.vow-flow-item h4 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #20272f;
+  margin-bottom: 1.2rem;
+  line-height: 1.5;
+}
+
+.vow-flow-item p {
+  font-size: 1.5rem;
+  line-height: 1.9;
+  color: #555;
+  clear: both;
+}
+
+.vow-flow-note {
+  margin-top: 3rem;
+  padding: 2.5rem 3rem;
+  background: #fff;
+  border: 1px solid #ddd;
+}
+
+/* ---- English font overrides (body.en) ------------------------- */
+
+body.en.vow-renewal .page-title-catch {
+  font-family: "Lora", Georgia, serif;
+  font-size: 2.2rem;
+}
+
+body.en.vow-renewal .vow-story-quote {
+  font-family: "Lora", Georgia, serif;
+  font-style: italic;
+}
+
+body.en.vow-renewal .vow-num {
+  font-family: "Lora", Georgia, serif;
+}
+
+/* ---- Responsive ----------------------------------------------- */
+
+@media (max-width: 960px) {
+  .vow-steps {
+    flex-direction: column;
+  }
+  .vow-story-grid {
+    grid-template-columns: 1fr;
+  }
+  .vow-flow-grid {
+    grid-template-columns: 1fr;
+  }
+  body.vow-renewal .page-title-main {
+    font-size: 4.2rem;
+  }
+  body.vow-renewal .page-title-catch {
+    font-size: 2rem;
+  }
+  .vow-story-photos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .vow-photo-placeholder.tall {
+    grid-column: auto;
+    grid-row: auto;
+    aspect-ratio: 4 / 3;
+  }
+}
+
+@media (max-width: 640px) {
+  body.vow-renewal .page-title {
+    min-height: 50vh;
+  }
+  body.vow-renewal .page-title-main {
+    font-size: 3.4rem;
+  }
+  body.vow-renewal .page-title-catch {
+    font-size: 1.8rem;
+    margin-bottom: 2.5rem;
+  }
+  body.vow-renewal .page-title .inner {
+    padding: 5rem 0 5.5rem;
+  }
+  body.vow-renewal .page-title .button {
+    width: 100%;
+    max-width: 300px;
+  }
+  .vow-num {
+    font-size: 7rem;
+    margin-bottom: -2rem;
+  }
+  .vow-step {
+    padding: 2.5rem 2rem;
+  }
+  .vow-for-who-item {
+    padding: 2rem 2.2rem;
+  }
+  .vow-story-photos {
+    grid-template-columns: 1fr 1fr;
+  }
+  .vow-flow-item {
+    padding: 2.2rem 2rem;
+  }
+}
+
+@media (max-width: 425px) {
+  body.vow-renewal .page-title-main {
+    font-size: 3rem;
+  }
+  body.vow-renewal .page-title-catch {
+    font-size: 1.7rem;
+  }
+  .vow-story-photos {
+    grid-template-columns: 1fr;
+  }
+  .vow-flow-item-num {
+    font-size: 3.5rem;
+  }
+}
