@@ -276,7 +276,7 @@ body.vow-renewal .entry .box { background: rgba(255, 255, 255, 0.88); }
 
 /* セッションの流れ冒頭の中サイズ画像 */
 .vow-image-medium {
-  margin: 0 auto 4rem;
+  margin: 4rem auto;
   width: 100%;
   height: 300px;
   background: linear-gradient(135deg, #d6e5f3 0%, #e8e0d3 100%);
@@ -305,7 +305,7 @@ body.vow-renewal .entry .box { background: rgba(255, 255, 255, 0.88); }
   }
   .vow-image-medium {
     height: 220px;
-    margin-bottom: 3rem;
+    margin: 3rem auto;
   }
 }
 
