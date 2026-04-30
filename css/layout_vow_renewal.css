@@ -19,7 +19,7 @@ body.vow-renewal .page-title::before {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url(../vow_renewal/img/hero.jpg);
+  background-image: url(../vow_renewal/img/hero.png);
   background-size: cover;
   background-position: center 40%;
   opacity: 0.30;
@@ -229,6 +229,125 @@ body.vow-renewal .entry .box { background: rgba(255, 255, 255, 0.88); }
   height: 100%;
   object-fit: cover;
   display: block;
+}
+
+/* ---- Image placeholders / images ------------------------------ */
+
+/* リード下のフルワイド画像 */
+.vow-image-wide {
+  margin: 5rem 0 0;
+  width: 100%;
+  height: 460px;
+  background: linear-gradient(135deg, #d6e5f3 0%, #e8e0d3 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6a8fb5;
+  font-size: 1.4rem;
+  letter-spacing: .15em;
+  overflow: hidden;
+}
+.vow-image-wide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* セクション間のブレイク（帯） */
+.vow-image-break {
+  width: 100%;
+  height: 360px;
+  background: linear-gradient(135deg, #cdd9e5 0%, #e3dccf 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6a8fb5;
+  font-size: 1.4rem;
+  letter-spacing: .15em;
+  overflow: hidden;
+}
+.vow-image-break img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* セッションの流れ冒頭の中サイズ画像 */
+.vow-image-medium {
+  margin: 0 auto 4rem;
+  width: 100%;
+  height: 300px;
+  background: linear-gradient(135deg, #d6e5f3 0%, #e8e0d3 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6a8fb5;
+  font-size: 1.4rem;
+  letter-spacing: .15em;
+  overflow: hidden;
+}
+.vow-image-medium img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .vow-image-wide {
+    height: 280px;
+    margin-top: 4rem;
+  }
+  .vow-image-break {
+    height: 220px;
+  }
+  .vow-image-medium {
+    height: 220px;
+    margin-bottom: 3rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .vow-image-wide,
+  .vow-image-break,
+  .vow-image-medium {
+    height: 180px;
+  }
+}
+
+/* ---- Voice (coming soon) -------------------------------------- */
+
+.vow-voice-coming {
+  margin-top: 4rem;
+  padding: 6rem 3rem;
+  background: #fff;
+  border: 1px dashed #b8c8d8;
+  text-align: center;
+}
+
+.vow-voice-coming-text {
+  font-family: "游明朝", YuMincho, "Hiragino Mincho ProN", serif;
+  font-size: 2.4rem;
+  color: #4d719a;
+  letter-spacing: .25em;
+  margin-bottom: 1.5rem;
+}
+
+.vow-voice-coming-sub {
+  font-size: 1.4rem;
+  color: #888;
+  line-height: 1.9;
+}
+
+@media (max-width: 640px) {
+  .vow-voice-coming {
+    padding: 4rem 2rem;
+  }
+  .vow-voice-coming-text {
+    font-size: 2rem;
+  }
 }
 
 /* ---- Session flow --------------------------------------------- */
