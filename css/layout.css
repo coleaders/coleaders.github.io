@@ -512,6 +512,18 @@ body.couple-family #vow-renewal {
   }
 }
 
+/* システムコーチングの流れ下の体験セッションボタン
+---------------------------------------------*/
+.sc-flow-entry-button {
+  margin-top: 60px;
+}
+.sc-flow-entry-button .button {
+  width: 360px;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* 事例
 ---------------------------------------------*/
 /* レイアウト */
