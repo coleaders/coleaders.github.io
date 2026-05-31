@@ -257,6 +257,261 @@ body.org .entry {
 /* --------------------------------
  * Couple & Family
  * -------------------------------- */
+/* CrossVision セクション
+---------------------------------------------*/
+body.couple-family #cross-vision .content-title {
+  padding-top: 70px;
+}
+body.couple-family #cross-vision {
+  padding-bottom: 100px;
+  background: #eef5f9;
+}
+
+/* CrossVision ティザー画像 */
+.cv-teaser-image {
+  margin-top: 70px;
+  width: 100%;
+  height: 380px;
+  background: linear-gradient(135deg, #c5dded 0%, #dde8f0 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #5a9ab5;
+  font-size: 1.4rem;
+  letter-spacing: .15em;
+  overflow: hidden;
+}
+.cv-teaser-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+@media (max-width: 768px) {
+  .cv-teaser-image {
+    height: 240px;
+  }
+}
+@media (max-width: 425px) {
+  .cv-teaser-image {
+    height: 180px;
+  }
+}
+
+/* タイトル右バッジ */
+.content-title-badge {
+  float: right;
+  margin-top: 28px;
+  margin-bottom: 0;
+}
+
+/* セッション形式バッジ */
+.session-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: .6rem;
+  font-size: 1.25rem;
+  letter-spacing: .07em;
+  padding: .35rem 1.2rem;
+  margin-bottom: 2rem;
+}
+.cv-session-badge {
+  color: #1a4d6b;
+  background: #c5dded;
+}
+.vr-session-badge {
+  color: #2e4a72;
+  background: #d5dff0;
+}
+
+/* CrossVision CTA */
+.cv-cta-wrap {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.cv-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 28px;
+  padding: 28px 48px;
+  border: 1px solid #1e4d6b;
+  background: #fff;
+  color: #20272f;
+  text-decoration: none;
+  transition: background 0.25s ease, color 0.25s ease;
+  position: relative;
+}
+.cv-cta:hover {
+  background: #1e4d6b;
+  color: #fff;
+  border-color: #1e4d6b;
+}
+.cv-cta-en {
+  font-family: "游明朝", YuMincho, "Hiragino Mincho ProN", "Hiragino Mincho Pro", serif;
+  font-size: 1.6rem;
+  letter-spacing: 0.18em;
+  color: #2a6b8a;
+  border-right: 1px solid #a8c8dc;
+  padding-right: 28px;
+  transition: color 0.25s ease, border-color 0.25s ease;
+}
+.cv-cta:hover .cv-cta-en {
+  color: rgba(255,255,255,0.85);
+  border-right-color: rgba(255,255,255,0.4);
+}
+.cv-cta-text {
+  font-size: 1.6rem;
+  font-weight: bold;
+  letter-spacing: 0.04em;
+}
+.cv-cta-arrow {
+  font-size: 1.8rem;
+  color: #2a6b8a;
+  transition: transform 0.25s ease, color 0.25s ease;
+}
+.cv-cta:hover .cv-cta-arrow {
+  color: #fff;
+  transform: translateX(6px);
+}
+
+@media (max-width: 640px) {
+  .cv-cta {
+    flex-direction: column;
+    gap: 14px;
+    padding: 24px 28px;
+    width: 100%;
+    text-align: center;
+  }
+  .cv-cta-en {
+    border-right: none;
+    border-bottom: 1px solid #a8c8dc;
+    padding-right: 0;
+    padding-bottom: 12px;
+  }
+  .cv-cta:hover .cv-cta-en {
+    border-bottom-color: rgba(255,255,255,0.4);
+    border-right-color: transparent;
+  }
+  .cv-cta-text {
+    font-size: 1.5rem;
+  }
+}
+
+/* バウリニューアル セクション
+---------------------------------------------*/
+body.couple-family #vow-renewal .content-title {
+  padding-top: 70px;
+}
+body.couple-family #vow-renewal {
+  padding-bottom: 100px;
+}
+
+/* バウリニューアル ティザー画像 */
+.vr-teaser-image {
+  margin-top: 70px;
+  width: 100%;
+  height: 380px;
+  background: linear-gradient(135deg, #d6e5f3 0%, #e8e0d3 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6a8fb5;
+  font-size: 1.4rem;
+  letter-spacing: .15em;
+  overflow: hidden;
+}
+.vr-teaser-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+@media (max-width: 768px) {
+  .vr-teaser-image {
+    height: 240px;
+  }
+}
+@media (max-width: 425px) {
+  .vr-teaser-image {
+    height: 180px;
+  }
+}
+
+/* バウリニューアル CTA */
+.vr-cta-wrap {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.vr-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 28px;
+  padding: 28px 48px;
+  border: 1px solid #20272f;
+  background: #fff;
+  color: #20272f;
+  text-decoration: none;
+  transition: background 0.25s ease, color 0.25s ease;
+  position: relative;
+}
+.vr-cta:hover {
+  background: #0d4482;
+  color: #fff;
+  border-color: #0d4482;
+}
+.vr-cta-en {
+  font-family: "游明朝", YuMincho, "Hiragino Mincho ProN", "Hiragino Mincho Pro", serif;
+  font-size: 1.6rem;
+  letter-spacing: 0.18em;
+  color: #4d719a;
+  border-right: 1px solid #c8d4e0;
+  padding-right: 28px;
+  transition: color 0.25s ease, border-color 0.25s ease;
+}
+.vr-cta:hover .vr-cta-en {
+  color: rgba(255,255,255,0.85);
+  border-right-color: rgba(255,255,255,0.4);
+}
+.vr-cta-text {
+  font-size: 1.6rem;
+  font-weight: bold;
+  letter-spacing: 0.04em;
+}
+.vr-cta-arrow {
+  font-size: 1.8rem;
+  color: #4d719a;
+  transition: transform 0.25s ease, color 0.25s ease;
+}
+.vr-cta:hover .vr-cta-arrow {
+  color: #fff;
+  transform: translateX(6px);
+}
+
+@media (max-width: 640px) {
+  .vr-cta {
+    flex-direction: column;
+    gap: 14px;
+    padding: 24px 28px;
+    width: 100%;
+    text-align: center;
+  }
+  .vr-cta-en {
+    border-right: none;
+    border-bottom: 1px solid #c8d4e0;
+    padding-right: 0;
+    padding-bottom: 12px;
+  }
+  .vr-cta:hover .vr-cta-en {
+    border-bottom-color: rgba(255,255,255,0.4);
+    border-right-color: transparent;
+  }
+  .vr-cta-text {
+    font-size: 1.5rem;
+  }
+}
+
 /* 事例
 ---------------------------------------------*/
 /* レイアウト */

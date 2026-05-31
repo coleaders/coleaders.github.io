@@ -72,12 +72,12 @@ body.vow-renewal .page-title .button a:hover {
 
 /* ---- Section backgrounds -------------------------------------- */
 
-body.vow-renewal #about   { background: #fff;     padding: 7rem 0; }
+body.vow-renewal #about   { background: #fff;     padding: 7rem 0 0; }
 body.vow-renewal #for-who { background: #f5f1ec;  padding: 7rem 0; }
 body.vow-renewal #story   { background: #fff;     padding: 7rem 0; }
 body.vow-renewal #session { background: #f5f1ec;  padding: 7rem 0; }
 
-body.vow-renewal .entry { background: #1a2d42; }
+body.vow-renewal .entry { background: #1a2d42; margin-top: 0; }
 body.vow-renewal .entry .box { background: rgba(255, 255, 255, 0.88); }
 
 /* ---- Large decorative section number -------------------------- */
@@ -394,6 +394,10 @@ body.vow-renewal .entry .box { background: rgba(255, 255, 255, 0.88); }
   padding: 2.5rem 3rem;
   background: #fff;
   border: 1px solid #ddd;
+}
+
+.vow-flow-note .memo {
+  margin-top: 0;
 }
 
 /* ---- English font overrides (body.en) ------------------------- */

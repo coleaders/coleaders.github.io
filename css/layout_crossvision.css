@@ -1,0 +1,464 @@
+@charset "utf-8";
+
+/* ============================================================
+   Cross Vision Page  (body.cross-vision)
+   ============================================================ */
+
+/* ---- Hero / page-title ---------------------------------------- */
+
+body.cross-vision .page-title {
+  min-height: 58vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(150deg, #0d2d3e 0%, #1a4d6b 55%, #2a7a9a 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+body.cross-vision .page-title::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url(../couple_family/img/crossvision_03.jpg);
+  background-size: cover;
+  background-position: center 40%;
+  opacity: 0.25;
+}
+
+body.cross-vision .page-title .inner {
+  position: relative;
+  z-index: 1;
+  padding: 6rem 0 7rem;
+}
+
+body.cross-vision .page-title-main {
+  color: #fff;
+  font-size: 5.2rem;
+  letter-spacing: .06em;
+  margin-bottom: .6rem;
+}
+
+body.cross-vision .page-title-sub {
+  color: rgba(255, 255, 255, 0.70);
+  font-size: 1.3rem;
+  letter-spacing: .28em;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+}
+
+body.cross-vision .page-title-catch {
+  color: #fff;
+  font-size: 2.4rem;
+  font-family: "游明朝", YuMincho, "Hiragino Mincho ProN", "Hiragino Mincho Pro", serif;
+  line-height: 1.8;
+  margin-bottom: 3.5rem;
+}
+
+body.cross-vision .page-title .button {
+  width: 300px;
+}
+
+body.cross-vision .page-title .button a {
+  background: transparent;
+  border: 1.5px solid rgba(255, 255, 255, 0.65);
+  color: #fff;
+  font-size: 1.6rem;
+}
+
+body.cross-vision .page-title .button a:hover {
+  background: rgba(255, 255, 255, 0.15);
+  opacity: 1;
+}
+
+/* ---- Section backgrounds -------------------------------------- */
+
+body.cross-vision #about   { background: #fff;     padding: 7rem 0; }
+body.cross-vision #for-who { background: #eef5f9;  padding: 7rem 0; }
+body.cross-vision #program { background: #fff;     padding: 7rem 0; }
+body.cross-vision #voice   { background: #eef5f9;  padding: 7rem 0; }
+
+body.cross-vision .entry { background: #0d2d3e; }
+body.cross-vision .entry .box { background: rgba(255, 255, 255, 0.88); }
+
+/* ---- Large decorative section number -------------------------- */
+
+.cv-num {
+  display: block;
+  font-size: 11rem;
+  color: rgba(42, 107, 138, 0.09);
+  font-family: "游明朝", YuMincho, "Hiragino Mincho ProN", serif;
+  line-height: .72;
+  letter-spacing: -.05em;
+  margin-bottom: -3rem;
+  user-select: none;
+  pointer-events: none;
+}
+
+/* ---- Feature cards (3-col) ------------------------------------ */
+
+.cv-features {
+  display: flex;
+  gap: 2.5rem;
+  margin-top: 4.5rem;
+}
+
+.cv-feature {
+  flex: 1;
+  padding: 3rem 2.5rem;
+  border-top: 3px solid #2a6b8a;
+  background: #eef5f9;
+}
+
+.cv-feature-icon {
+  display: block;
+  font-size: 2.4rem;
+  margin-bottom: 1.4rem;
+  color: #2a6b8a;
+}
+
+.cv-feature h4 {
+  font-size: 1.9rem;
+  font-weight: bold;
+  color: #20272f;
+  margin-bottom: 1.2rem;
+  line-height: 1.45;
+}
+
+.cv-feature p {
+  font-size: 1.5rem;
+  line-height: 1.95;
+  color: #555;
+}
+
+/* ---- Wide image ----------------------------------------------- */
+
+.cv-image-wide {
+  margin: 5rem 0 0;
+  width: 100%;
+  height: 460px;
+  background: linear-gradient(135deg, #c5dded 0%, #dde8f0 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #5a9ab5;
+  font-size: 1.4rem;
+  letter-spacing: .15em;
+  overflow: hidden;
+}
+
+.cv-image-wide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.cv-image-caption {
+  margin-top: 1.2rem;
+  font-size: 1.3rem;
+  line-height: 1.8;
+  color: #888;
+}
+
+/* ---- For who list --------------------------------------------- */
+
+.cv-for-who-list {
+  list-style: none;
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+}
+
+.cv-for-who-item {
+  background: #fff;
+  padding: 3rem 3.5rem;
+  border-left: 3px solid #2a6b8a;
+}
+
+.cv-for-who-item h4 {
+  font-size: 1.9rem;
+  font-weight: bold;
+  color: #20272f;
+  margin-bottom: .9rem;
+  line-height: 1.5;
+}
+
+.cv-for-who-item p {
+  font-size: 1.5rem;
+  line-height: 1.95;
+  color: #555;
+}
+
+/* ---- Program flow --------------------------------------------- */
+
+.cv-program-lead {
+  font-size: 1.7rem;
+  line-height: 2.0;
+  color: #333;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+}
+
+.cv-program-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.cv-program-item {
+  background: #eef5f9;
+  padding: 3rem;
+  position: relative;
+  border-top: 3px solid #2a6b8a;
+}
+
+.cv-program-item-num {
+  font-size: 5rem;
+  color: rgba(42, 107, 138, 0.11);
+  font-family: "游明朝", YuMincho, serif;
+  line-height: 1;
+  float: right;
+  margin: -.5rem -.5rem 0 1.5rem;
+}
+
+.cv-program-item h4 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #20272f;
+  margin-bottom: 1.2rem;
+  line-height: 1.5;
+}
+
+.cv-program-item p {
+  font-size: 1.5rem;
+  line-height: 1.9;
+  color: #555;
+  clear: both;
+}
+
+.cv-program-note {
+  margin-top: 3rem;
+  padding: 2.5rem 3rem;
+  background: #eef5f9;
+  border: 1px solid #c5dded;
+}
+
+.cv-program-note .memo {
+  margin-top: 0;
+}
+
+/* ---- Timeline (program 3-step flow) --------------------------- */
+
+.cv-timeline {
+  display: flex;
+  align-items: stretch;
+  margin-top: 3rem;
+}
+
+.cv-timeline-step {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background: #eef5f9;
+  border-top: 3px solid #2a6b8a;
+}
+
+.cv-timeline-badge {
+  font-size: 4rem;
+  color: rgba(42, 107, 138, 0.12);
+  font-family: "游明朝", YuMincho, serif;
+  line-height: 1;
+  text-align: right;
+  padding: 1.5rem 1.5rem 0;
+}
+
+.cv-timeline-body {
+  padding: 0 2.5rem 2.8rem;
+  flex: 1;
+}
+
+.cv-timeline-tag {
+  display: inline-block;
+  font-size: 1.1rem;
+  color: #1a4d6b;
+  background: #c5dded;
+  padding: .2rem .9rem;
+  letter-spacing: .08em;
+  margin-bottom: 1rem;
+}
+
+.cv-timeline-step h4 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #20272f;
+  margin-bottom: 1.1rem;
+  line-height: 1.45;
+}
+
+.cv-timeline-step p {
+  font-size: 1.4rem;
+  line-height: 1.9;
+  color: #555;
+}
+
+.cv-timeline-connector {
+  flex-shrink: 0;
+  width: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #2a6b8a;
+  font-size: 1.4rem;
+  background: #fff;
+}
+
+/* ---- Section break image -------------------------------------- */
+
+.cv-image-break {
+  width: 100%;
+  height: 520px;
+  background: linear-gradient(135deg, #b8d8e8 0%, #d5e5ef 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #5a9ab5;
+  font-size: 1.4rem;
+  letter-spacing: .15em;
+  overflow: hidden;
+}
+
+.cv-image-break img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ---- Voice (coming soon) -------------------------------------- */
+
+.cv-voice-coming {
+  margin-top: 4rem;
+  padding: 6rem 3rem;
+  background: #fff;
+  border: 1px dashed #a8c8dc;
+  text-align: center;
+}
+
+.cv-voice-coming-text {
+  font-family: "游明朝", YuMincho, "Hiragino Mincho ProN", serif;
+  font-size: 2.4rem;
+  color: #2a6b8a;
+  letter-spacing: .25em;
+  margin-bottom: 1.5rem;
+}
+
+.cv-voice-coming-sub {
+  font-size: 1.4rem;
+  color: #888;
+  line-height: 1.9;
+}
+
+/* ---- English font overrides (body.en) ------------------------- */
+
+body.en.cross-vision .page-title-catch {
+  font-family: "Lora", Georgia, serif;
+  font-size: 2.2rem;
+}
+
+body.en.cross-vision .cv-num {
+  font-family: "Lora", Georgia, serif;
+}
+
+/* ---- Responsive ----------------------------------------------- */
+
+@media (max-width: 960px) {
+  .cv-features {
+    flex-direction: column;
+  }
+  .cv-program-grid {
+    grid-template-columns: 1fr;
+  }
+  body.cross-vision .page-title-main {
+    font-size: 4.2rem;
+  }
+  body.cross-vision .page-title-catch {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .cv-image-wide {
+    height: 280px;
+    margin-top: 4rem;
+  }
+  .cv-image-break {
+    height: 320px;
+  }
+  .cv-timeline {
+    flex-direction: column;
+  }
+  .cv-timeline-connector {
+    width: 100%;
+    height: 2.5rem;
+  }
+  .cv-timeline-connector i {
+    transform: rotate(90deg);
+  }
+}
+
+@media (max-width: 640px) {
+  body.cross-vision .page-title {
+    min-height: 50vh;
+  }
+  body.cross-vision .page-title-main {
+    font-size: 3.4rem;
+  }
+  body.cross-vision .page-title-catch {
+    font-size: 1.8rem;
+    margin-bottom: 2.5rem;
+  }
+  body.cross-vision .page-title .inner {
+    padding: 5rem 0 5.5rem;
+  }
+  body.cross-vision .page-title .button {
+    width: 100%;
+    max-width: 300px;
+  }
+  .cv-num {
+    font-size: 7rem;
+    margin-bottom: -2rem;
+  }
+  .cv-feature {
+    padding: 2.5rem 2rem;
+  }
+  .cv-for-who-item {
+    padding: 2rem 2.2rem;
+  }
+  .cv-program-item {
+    padding: 2.2rem 2rem;
+  }
+  .cv-voice-coming {
+    padding: 4rem 2rem;
+  }
+  .cv-voice-coming-text {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 425px) {
+  body.cross-vision .page-title-main {
+    font-size: 3rem;
+  }
+  body.cross-vision .page-title-catch {
+    font-size: 1.7rem;
+  }
+  .cv-program-item-num {
+    font-size: 3.5rem;
+  }
+  .cv-image-wide,
+  .cv-image-break {
+    height: 240px;
+  }
+}
