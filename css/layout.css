@@ -305,6 +305,15 @@ body.couple-family #cross-vision {
   margin-bottom: 0;
 }
 
+@media (max-width: 768px) {
+  /* スマホではフロート解除し、タイトルの上に積む（タイトルへの重なり防止） */
+  .content-title-badge {
+    float: none;
+    margin-top: 0;
+    margin-bottom: 1.5rem;
+  }
+}
+
 /* セッション形式バッジ */
 .session-badge {
   display: inline-flex;
